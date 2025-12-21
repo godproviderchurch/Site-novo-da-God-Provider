@@ -1,0 +1,46 @@
+name: Deploy to Hostinger
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  web-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v4
+
+      - name: 🟢 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: 📦 Install dependencies
+        run: npm ci
+
+      - name: 🏗️ Build Project
+        run: npm run build
+
+      - name: 📂 Sync files to Hostinger
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          pk: ${{ secrets.SSH_PRIVATE_KEY }} # Optional: Use if you change protocol to sftp
+          # O diretório local onde o build é gerado (padrão Vite/React é dist ou build)
+          local-dir: ./dist/
+          # O diretório no servidor onde os arquivos devem ficar. 
+          # Na Hostinger, geralmente é ./domains/SEUDOMINIO.COM/public_html/ se usar o FTP principal.
+          # Se criar um usuário FTP que já aponta para a pasta pública, use ./ 
+          # IMPORTANTE: Verifique isso no painel da Hostinger para não apagar arquivos errados.
+          server-dir: ./
+          protocol: ftp
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
