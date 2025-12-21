@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adote um Aluno - God Provider Church</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- External JS (contains Tailwind Config + Logic) -->
+    <script src="script.js"></script>
+</head>
+
+<body class="antialiased selection:bg-white/20 selection:text-white">
+
+    <!-- Header / Nav -->
+    <header class="fixed w-full top-0 z-50 glass-card border-b border-white/5 animate-on-scroll is-visible">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0 hover:opacity-80 transition-opacity">
+                    <img class="h-10 w-auto" src="./assets/logo.png" alt="God Provider Church">
+                </div>
+                <div>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSek3mThWuOt68JFGL9ICgHw30TZz964JuL_9bb7i-hDn9zk3Q/viewform?usp=publish-editor"
+                        target="_blank"
+                        class="hidden md:inline-flex items-center justify-center px-6 py-2 border border-transparent text-sm font-medium rounded-full text-black bg-white hover:bg-gray-200 transition-all btn-hover">
+                        Quero contribuir
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section (No Text, just Image & Vibes) -->
+    <div class="relative bg-[#050505]">
+        <!-- Full height on desktop, adjusted on mobile, allowing image to be behind header if we wanted, 
+             but typically for "banner" we might want it to start after or be fully immersive. 
+             If we remove pt-20, header overlays image. User asked for "100% width", implies full bleed. -->
+        <div class="w-full h-[60vh] md:h-screen relative overflow-hidden banner-container">
+
+            <!-- Bottom Fade Gradient (Stronger transition to black) -->
+            <div
+                class="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-[#050505] via-[#050505]/80 to-transparent z-20">
+            </div>
+
+            <!-- Overall Overlay (lighter) -->
+            <div class="absolute inset-0 bg-black/10 z-10"></div>
+
+            <!-- Banner Image -->
+            <img src="./assets/banner_novo.png" alt="Banner Adote um Aluno"
+                class="banner-image object-cover object-top w-full h-full">
+
+            <!-- Floating Chevron/Scroll Indicator -->
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-30 animate-bounce">
+                <a href="#sobre" class="text-white/70 hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 space-y-24" id="sobre">
+
+        <!-- Intro -->
+        <section class="text-center space-y-6 animate-on-scroll">
+            <span
+                class="inline-block px-3 py-1 rounded-full bg-white/5 text-xs font-semibold tracking-wider text-gray-400 uppercase border border-white/5 mb-2">Projeto
+                Social</span>
+            <h2 class="text-3xl md:text-5xl font-bold text-white tracking-tight">Nosso Propósito</h2>
+            <p class="text-lg md:text-xl text-gray-300 leading-relaxed font-light max-w-2xl mx-auto">
+                O nosso projeto <strong class="text-white font-semibold">Adote um Aluno</strong> continua ativo e
+                crescendo. Esse projeto já abençoou muitas vidas, e seguimos firmes no propósito de apoiar mais pessoas
+                nos seus estudos.
+            </p>
+        </section>
+
+        <!-- Carta Apresentação -->
+        <section class="glass-card rounded-3xl p-8 md:p-12 relative overflow-hidden animate-on-scroll">
+            <!-- Decorative blob -->
+            <div class="absolute -top-20 -right-20 w-64 h-64 bg-white/5 rounded-full blur-3xl pointer-events-none">
+            </div>
+
+            <div class="relative z-10 space-y-8">
+                <div class="flex items-center gap-4 border-b border-white/5 pb-6">
+                    <div class="w-2 bg-gradient-to-b from-white to-transparent h-12 rounded-full"></div>
+                    <h3 class="text-3xl font-semibold text-gradient-gold">Apresentação</h3>
+                </div>
+
+                <div class="space-y-6 text-gray-300 leading-relaxed text-lg font-light">
+                    <p>Olá! Estamos muito felizes pelo seu interesse em fazer parte do nosso <span
+                            class="text-white font-normal">Projeto Adote Um Aluno</span>.</p>
+                    <p>Cremos que, por meio desse projeto, dezenas de crianças e famílias serão impactadas através da
+                        educação.</p>
+                    <p>Nosso objetivo é dar a oportunidade para essas crianças estudarem em colégios de ponta na cidade
+                        de Goiânia, possibilitando a elas um ambiente de ensino de qualidade, bem como condições para
+                        que suas famílias venham arcar com despesas de materiais e uniformes. Acreditamos que isso será
+                        possível graças à sua contribuição!</p>
+                    <p>Com o Adote Um Aluno, buscamos encontrar parcerias com escolas para disponibilizarem um
+                        percentual de desconto para os estudantes selecionados nesse projeto. Assim, juntamente com o
+                        seu auxílio, daremos a essas crianças a oportunidade de transformarem o seu futuro por meio da
+                        educação.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Grid: Como Funciona + Como se Inscrever -->
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Como funciona -->
+            <section
+                class="bg-zion-dark rounded-2xl p-8 border border-white/5 hover:border-white/10 transition-colors animate-on-scroll delay-100 group">
+                <div
+                    class="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center mb-6 border border-white/5 group-hover:bg-white/10 transition-colors group-hover:scale-110 duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Como funciona?</h3>
+                <div class="space-y-4 text-gray-400 text-sm leading-relaxed">
+                    <p>A God Provider Church selecionará o aluno a ser beneficiado pela sua contribuição e fará a ponte
+                        entre você e o nosso colégio parceiro.</p>
+                    <p>Ao abraçar esse projeto, pedimos que você faça o compromisso de, no mínimo, <strong
+                            class="text-white">1 (um) ano letivo</strong>, para garantir a continuidade do estudo.</p>
+                    <p>Nesse período, você receberá informações sobre a evolução escolar do aluno beneficiado. Após a
+                        definição, conectaremos você com o colégio para informar valores e formas de pagamento.</p>
+                </div>
+            </section>
+
+            <!-- Como se inscrever -->
+            <section
+                class="bg-zion-dark rounded-2xl p-8 border border-white/5 hover:border-white/10 transition-colors animate-on-scroll delay-200 group">
+                <div
+                    class="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center mb-6 border border-white/5 group-hover:bg-white/10 transition-colors group-hover:scale-110 duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Como se inscrever?</h3>
+                <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                    Se você deseja participar dessa iniciativa como apadrinhado, preencha seus dados para entrarmos em
+                    contato com maiores informações.
+                </p>
+                <div class="pt-4">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSek3mThWuOt68JFGL9ICgHw30TZz964JuL_9bb7i-hDn9zk3Q/viewform?usp=publish-editor"
+                        target="_blank"
+                        class="w-full block text-center bg-white text-black font-bold py-4 px-6 rounded-xl hover:bg-gray-200 transition-colors shadow-lg hover:shadow-white/10">
+                        Preencher Formulário
+                    </a>
+                </div>
+            </section>
+        </div>
+
+        <!-- Big CTA Section -->
+        <section class="text-center py-16 animate-on-scroll">
+            <h2 class="text-3xl md:text-5xl font-bold mb-10 max-w-3xl mx-auto leading-tight">Faça parte da transformação
+                na vida de uma criança hoje mesmo.</h2>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSek3mThWuOt68JFGL9ICgHw30TZz964JuL_9bb7i-hDn9zk3Q/viewform?usp=publish-editor"
+                target="_blank"
+                class="inline-flex items-center justify-center px-10 py-5 border border-transparent text-lg font-bold rounded-full text-black bg-white hover:bg-gray-200 transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(255,255,255,0.3)]">
+                QUERO APADRINHAR AGORA
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 -mr-1" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-zion-dark py-12 border-t border-white/5 animate-on-scroll">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <img class="h-8 w-auto mx-auto mb-6 opacity-80" src="./assets/logo.png" alt="God Provider Church">
+            <p class="text-gray-500 text-sm">
+                &copy; <span id="year"></span> God Provider Church. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

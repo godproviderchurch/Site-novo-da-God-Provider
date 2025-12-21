@@ -1,0 +1,464 @@
+{
+    "home": {
+        "hero": {
+            "title": "BEM-VINDO À GOD PROVIDER",
+            "subtitle": "Um lugar para pertencer",
+            "buttonText": "Planeje sua visita",
+            "backgroundImage": "https://images.unsplash.com/photo-1544427920-c49ccfb85566?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+        },
+        "identity": {
+            "tagline": "Nossa Identidade",
+            "title": "Uma igreja para a cidade",
+            "description": "Conheça o nosso DNA (visão, missão e valores) e também aquilo que estamos construindo como igreja.",
+            "buttonText": "Saiba mais sobre nós",
+            "images": [
+                "https://picsum.photos/seed/about1/400/500",
+                "https://picsum.photos/seed/about2/400/500"
+            ]
+        },
+        "ministriesSection": {
+            "title": "Nossos Ministérios",
+            "description": "Ansiamos por ver jovens, adultos e idosos cumprindo o propósito de Deus nessa Terra.",
+            "list": [
+                {
+                    "id": "1",
+                    "title": "Impulse",
+                    "description": "Jovens de 18 a 24 anos",
+                    "image": "https://picsum.photos/seed/minimpulse/800/600"
+                },
+                {
+                    "id": "2",
+                    "title": "Raise",
+                    "description": "Adolescentes de 11 a 17 anos",
+                    "image": "https://picsum.photos/seed/minraise/800/600"
+                },
+                {
+                    "id": "3",
+                    "title": "Únicas",
+                    "description": "Ministério de Mulheres",
+                    "image": "https://picsum.photos/seed/minunicas/800/600"
+                },
+                {
+                    "id": "4",
+                    "title": "Kingdom Kids",
+                    "description": "Crianças de 0 a 10 anos",
+                    "image": "https://picsum.photos/seed/minkids/800/600"
+                },
+                {
+                    "id": "5",
+                    "title": "GP Grupos",
+                    "description": "Comunhão e Relacionamento",
+                    "image": "https://picsum.photos/seed/mingroups/800/600"
+                },
+                {
+                    "id": "6",
+                    "title": "GP Worship",
+                    "description": "Adoração e Louvor",
+                    "image": "https://picsum.photos/seed/minworship/800/600"
+                },
+                {
+                    "id": "7",
+                    "title": "GP Escolas",
+                    "description": "Ensino e Treinamento",
+                    "image": "https://picsum.photos/seed/minschool/800/600"
+                }
+            ]
+        },
+        "locations": {
+            "title": "Aos Domingos",
+            "items": [
+                {
+                    "id": "1",
+                    "city": "Goiânia",
+                    "address": "Av. T-14, 835 – St. Bela Vista",
+                    "serviceTimes": [
+                        "Dom 10h",
+                        "Dom 19h"
+                    ]
+                },
+                {
+                    "id": "2",
+                    "city": "Sarasota",
+                    "address": "1872 18th St, FL",
+                    "serviceTimes": [
+                        "Check Website"
+                    ]
+                }
+            ]
+        },
+        "cta": {
+            "title": "Construindo Nossa História",
+            "description": "Cause um impacto na próxima geração por meio de sua generosidade.",
+            "buttonText": "Faça sua doação"
+        }
+    },
+    "about": {
+        "header": {
+            "title": "Sobre Nós",
+            "description": "Saiba como a God Provider tem impactado a sociedade.",
+            "heroImage": "https://picsum.photos/seed/abouthero/1920/800"
+        },
+        "dna": {
+            "title": "Conheça o nosso DNA",
+            "subtitle": "Visão, Missão e Valores",
+            "vision": "Ver uma família de reis e rainhas exercendo autoridade e influência nas esferas da sociedade, avançando o Reino com poder, amor e sabedoria.",
+            "mission": "A God Provider existe para conduzir todos a experimentar a Deus e Seu Reino, equipando e discipulando através do ensino, testemunho, comunhão, oração e evangelismo.",
+            "values": [
+                "Família",
+                "Intimidade com Deus",
+                "Autoridade nas Escrituras",
+                "Oração",
+                "Sobrenatural",
+                "Discipulado",
+                "Liderança",
+                "Honra",
+                "Excelência"
+            ]
+        },
+        "leadership": {
+            "title": "Nossa Liderança",
+            "items": [
+                {
+                    "id": "senior",
+                    "name": "Heber e Rayssa Teo",
+                    "role": "Senior Pastors",
+                    "image": "https://picsum.photos/seed/heber/800/1000",
+                    "bio": [
+                        "Heber e Rayssa são os pastores seniores da God Provider Goiânia. Eles se mudaram para os Estados Unidos em 2012 e permaneceram naquele país por 7 anos, buscando mais de Deus e sendo ativados no sobrenatural.",
+                        "Após receberem uma palavra de que Deus traria um avivamento sobre o Brasil, eles deixaram a God Provider Sarasota e retornaram para Goiânia, assumindo a liderança da Sede no Brasil.",
+                        "Com uma visão apostólica, Heber e Rayssa carregam o anseio de contribuir com a transformação de cidades através do poder da mensagem do Reino de Deus, crendo que aquilo que o Senhor está fazendo não se limita a esta geração, mas irá impactar também as próximas."
+                    ]
+                },
+                {
+                    "id": "founder",
+                    "name": "Adarque e Eunice Teo",
+                    "role": "Pastores Fundadores",
+                    "image": "https://picsum.photos/seed/adarque/400/500"
+                },
+                {
+                    "id": "campus",
+                    "name": "Lucas e Flávia Teo",
+                    "role": "Pastores",
+                    "image": "https://picsum.photos/seed/lucasflavia/400/500"
+                },
+                {
+                    "id": "lead",
+                    "name": "Lucas Afonso",
+                    "role": "Pastor",
+                    "image": "https://picsum.photos/seed/lucasafonso/400/500"
+                }
+            ]
+        }
+    },
+    "ministries": {
+        "header": {
+            "title": "Áreas de Atuação",
+            "description": "Acreditamos que todo membro é um ministro. Descubra onde você pode servir, crescer e pertencer na família God Provider."
+        },
+        "list": [
+            {
+                "title": "Impulse",
+                "subtitle": "Jovens de 18 a 24 anos",
+                "description": "Somos o ministério da God Provider Church que busca impulsionar jovens a buscarem a presença de Deus e viverem o seu chamado. Nos reunimos todo sábado, às 20h15, em nossa sede, localizada em Goiânia, Goiás.",
+                "image": "https://picsum.photos/seed/minimpulse/800/600"
+            },
+            {
+                "title": "Raise",
+                "subtitle": "Adolescentes de 11 a 17 anos",
+                "description": "Somos o ministério da God Provider Church que busca conectar adolescentes ao propósito de Deus.",
+                "image": "https://picsum.photos/seed/minraise/800/600"
+            },
+            {
+                "title": "GP Worship",
+                "subtitle": "Ministério de Louvor",
+                "description": "Somos o ministério da God Provider Church que busca exaltar o nome do Senhor e conduzir pessoas na adoração, à medida que elas são tocadas, curadas e libertas.",
+                "image": "https://picsum.photos/seed/minworship/800/600"
+            },
+            {
+                "title": "Únicas",
+                "subtitle": "Ministério de Mulheres",
+                "description": "Somos o ministério da God Provider Church que busca o despertar de mulheres em suas identidades de filhas. O Culto Únicas acontece na última segunda do mês, às 19h00.",
+                "image": "https://picsum.photos/seed/minunicas/800/600"
+            },
+            {
+                "title": "Kingdom Kids",
+                "subtitle": "Crianças de 0 a 10 anos",
+                "description": "Somos o ministério da God Provider Church que busca ensinar e ministrar ao coração das crianças. Nos reunimos aos domingo, às 10h00 e às 19h00, no subsolo da nossa sede.",
+                "image": "https://picsum.photos/seed/minkids/800/600"
+            },
+            {
+                "title": "GP Grupos",
+                "subtitle": "Comunhão e Relacionamento",
+                "description": "Somos o ministério da God Provider Church que busca construir relacionamentos saudáveis através dos nossos encontros. Nos reunimos às terças-feiras, às 20h00.",
+                "image": "https://picsum.photos/seed/mingroups/800/600"
+            }
+        ]
+    },
+    "groups": {
+        "header": {
+            "title": "GP Grupos",
+            "description": "Junte-se a nós no GP Grupo."
+        },
+        "card": {
+            "title": "Toda Terça | 20h",
+            "description": "Nesses encontros, criamos um ambiente de comunhão, aprendizado e encorajamento. É nesse lugar que estreitamos nossos relacionamentos e revelamos amor ao nosso próximo. Procure o grupo mais próximo de você e faça parte.",
+            "buttonText": "Encontrar um Grupo",
+            "leaders": [
+                {
+                    "area": "GP de Jovens Casais",
+                    "leader": "Melo"
+                },
+                {
+                    "area": "GP de Jovens",
+                    "leader": "Amuêdo"
+                },
+                {
+                    "area": "GP Setor Bueno",
+                    "leader": "Afonso"
+                },
+                {
+                    "area": "GP Jardim Goiás",
+                    "leader": "Lucas Lousa"
+                }
+            ]
+        }
+    },
+    "leadership_page": {
+        "header": {
+            "title": "Nossa Liderança",
+            "description": "Homens e mulheres levantados por Deus para servir, equipar e liderar esta geração rumo ao seu destino profético."
+        },
+        "senior": {
+            "names": "Heber e Rayssa Teo",
+            "roles": "Senior Pastors",
+            "image": "https://picsum.photos/seed/heber/1200/800",
+            "bio": "Pastores à frente da God Provider Church, Heber e Rayssa têm liderado com amor e visão, dedicando suas vidas para edificar uma igreja relevante e apaixonada por Jesus. Eles acreditam no poder transformador do Evangelho e trabalham incansavelmente para ver vidas restauradas e propósitos ativados.",
+            "instagram_heber": "https://instagram.com/",
+            "instagram_rayssa": "https://instagram.com/"
+        },
+        "team": [
+            {
+                "name": "Adarque e Eunice Teo",
+                "role": "Founder Pastors",
+                "image": "https://picsum.photos/seed/adarque/600/600"
+            },
+            {
+                "name": "Lucas e Flávia Teo",
+                "role": "Campus Pastors",
+                "image": "https://picsum.photos/seed/lucasflavia/600/600"
+            },
+            {
+                "name": "Lucas Afonso",
+                "role": "Lead Pastor",
+                "image": "https://picsum.photos/seed/lucasafonso/600/600"
+            }
+        ],
+        "quote": {
+            "text": "A cultura do Reino é estabelecida quando líderes servem e servos lideram.",
+            "author": "Cultura GP"
+        }
+    },
+    "locations_page": {
+        "header": {
+            "title": "Encontre uma localização",
+            "description": "Estamos esperando por você em uma de nossas unidades."
+        },
+        "campuses": [
+            {
+                "id": "goiania",
+                "name": "God Provider Church Goiânia - Brasil",
+                "address": "Av. T-14, 835 – St. Bela Vista, Goiânia - GO, 74633-030",
+                "times": [
+                    "Domingo: 10h",
+                    "Domingo: 19h"
+                ],
+                "image": "https://picsum.photos/seed/locgoiania/600/400",
+                "details": "Nossa sede no Brasil. Um lugar de adoração vibrante e ensino da Palavra.",
+                "mapLink": "https://maps.google.com/?q=Av. T-14, 835 – St. Bela Vista, Goiânia - GO"
+            },
+            {
+                "id": "sarasota",
+                "name": "God Provider Church Sarasota - EUA",
+                "address": "1872 18th St, Sarasota, FL 34234, Estados Unidos",
+                "times": [
+                    "Consulte o site"
+                ],
+                "image": "https://picsum.photos/seed/locsarasota/600/400",
+                "details": "Nossa extensão nos Estados Unidos, levando a cultura do Reino para a Flórida.",
+                "mapLink": "https://maps.google.com/?q=1872 18th St, Sarasota, FL"
+            }
+        ]
+    },
+    "events_page": {
+        "header": {
+            "title": "Agenda",
+            "description": "Fique por dentro de tudo o que acontece na nossa casa."
+        },
+        "list": [
+            {
+                "month": "SET",
+                "day": "15",
+                "title": "Conferência GP 2024",
+                "location": "Vibra São Paulo",
+                "category": "Conferência",
+                "time": "19:00"
+            },
+            {
+                "month": "SET",
+                "day": "24",
+                "title": "Culto de Batismo",
+                "location": "Campus Morumbi",
+                "category": "Celebração",
+                "time": "10:00"
+            },
+            {
+                "month": "OUT",
+                "day": "02",
+                "title": "Noite de Adoração - GP Music",
+                "location": "Campus Osasco",
+                "category": "Worship",
+                "time": "20:00"
+            },
+            {
+                "month": "OUT",
+                "day": "12",
+                "title": "GP Kids Day",
+                "location": "Todos os Campi",
+                "category": "Kids",
+                "time": "09:00"
+            },
+            {
+                "month": "NOV",
+                "day": "04",
+                "title": "Escola de Profetas",
+                "location": "Campus Morumbi",
+                "category": "Ensino",
+                "time": "19:30"
+            }
+        ]
+    },
+    "contact_page": {
+        "header": {
+            "title": "Fale Conosco",
+            "description": "Estamos aqui para servir você. Se você tem dúvidas, pedidos de oração ou quer saber mais sobre a God Provider Church, entre em contato."
+        },
+        "info": {
+            "address": "R. Liberato Carvalho Leite, 86\nSão Paulo, SP - Brasil",
+            "email": "contato@godprovider.com.br",
+            "phone": "(11) 1234-5678"
+        }
+    },
+    "missions_page": {
+        "header": {
+            "title": "O Ide",
+            "subtitle": "GP Global",
+            "description": "\"Portanto ide, fazei discípulos de todas as nações.\"",
+            "verse": "Mateus 28:19"
+        },
+        "stats": {
+            "countries": "12",
+            "missionaries": "50+",
+            "impact": "3k",
+            "bases": "8"
+        },
+        "philosophy": {
+            "title": "Somos uma igreja local com impacto global.",
+            "description": "Acreditamos que a missão não é um departamento da igreja, mas o propósito da igreja. Investimos tempo, recursos e vidas para ver a transformação de realidades sociais e espirituais ao redor do mundo.",
+            "image": "https://picsum.photos/seed/missphilo/800/1000"
+        },
+        "projects": [
+            {
+                "id": 1,
+                "title": "Sertão Nordestino",
+                "focus": "Ação Humanitária e Evangelismo",
+                "description": "Levando água potável, alimento e a Água da Vida para comunidades isoladas no sertão do Brasil.",
+                "image": "https://picsum.photos/seed/misssertao/600/400"
+            },
+            {
+                "id": 2,
+                "title": "África",
+                "focus": "Orfanatos e Educação",
+                "description": "Suporte a orfanatos em Moçambique e Angola, provendo educação, nutrição e discipulado.",
+                "image": "https://picsum.photos/seed/missafrica/600/400"
+            },
+            {
+                "id": 3,
+                "title": "Nepal",
+                "focus": "Combate ao Tráfico Humano",
+                "description": "Resgate e restauração de vítimas de tráfico humano, oferecendo abrigo seguro.",
+                "image": "https://picsum.photos/seed/missnepal/600/400"
+            },
+            {
+                "id": 4,
+                "title": "Europa",
+                "focus": "Reevangelização",
+                "description": "Plantio de igrejas e fortalecimento da fé no continente europeu.",
+                "image": "https://picsum.photos/seed/misseuropa/600/400"
+            }
+        ]
+    },
+    "give_page": {
+        "header": {
+            "title": "Construa um futuro extraordinário",
+            "description": "Veja como você pode contribuir com esse ministério."
+        },
+        "pix": "05.235.901/0001-86",
+        "bank": {
+            "bank": "Banco Itaú (341)",
+            "agency": "1589",
+            "cc": "24323-5",
+            "name": "God Provider Church"
+        }
+    },
+    "give_cnh_page": {
+        "header": {
+            "title": "Construindo Nossa História",
+            "description": "Este não é apenas um prédio. É o legado que deixaremos para as próximas gerações."
+        },
+        "pix": "cnh@godproviderchurch.com",
+        "progress": {
+            "raised": 0,
+            "goal": 700000,
+            "percentage": 0
+        },
+        "completed_goals": [
+            "Painel de LED (R$ 114.300)",
+            "Sala Pastoral (R$ 35.000)",
+            "Terceiro Andar (R$ 265.000)"
+        ]
+    },
+    "give_adopt_page": {
+        "header": {
+            "title": "Adote um Aluno",
+            "description": "Faça parte deste projeto."
+        },
+        "letter": {
+            "intro": "Olá! Estamos muito felizes pelo seu interesse em fazer parte do nosso Projeto Adote Um Aluno. Cremos que, por meio desse projeto, dezenas de crianças e famílias serão impactadas através da educação.",
+            "objective": "Nosso objetivo é dar a oportunidade para essas crianças estudarem em colégios de ponta na cidade de Goiânia, possibilitando a elas um ambiente de ensino de qualidade, bem como condições para que suas famílias venham arcar com despesas de materiais e uniformes.",
+            "how_it_works": "A God Provider Church selecionará o aluno a ser beneficiado pela sua contribuição e fará a ponte entre você e o nosso colégio parceiro. Ao abraçar esse projeto, pedimos que você faça o compromisso de, no mínimo, 1 (um) ano letivo."
+        }
+    },
+    "impulse_page": {
+        "title": "Impulse",
+        "subtitle": "Seja impulsionado",
+        "schedule": "Todos os Sábados | 19h30",
+        "description": "Jovens da God Provider Church, onde você será impulsionado a viver o seu chamado. Em nossos encontros, buscamos a realidade dos Céus e proporcionamos um ambiente de descontração e conexão.",
+        "image": "https://picsum.photos/seed/impulsehero/800/800"
+    },
+    "unicas_page": {
+        "title": "Únicas",
+        "subtitle": "Entendendo quem você é através de quem te criou!",
+        "next_meeting": "26 de Fevereiro | 19h30",
+        "description": "É o nosso ministério que visa o despertar de mulheres em suas identidades de filhas. Em nossos encontros, somos levadas ao conhecimento de quem Deus é para termos a convicção de quem nós somos e qual é o nosso papel diante dessa revelação.",
+        "image": "https://picsum.photos/seed/unicashero/800/800"
+    },
+    "sunday_service_page": {
+        "header": {
+            "title": "Cultos",
+            "description": "Junte-se a nós neste domingo"
+        },
+        "session1": "10h",
+        "session2": "19h",
+        "hero_image": "https://picsum.photos/seed/sundayhero/800/1000"
+    }
+}
