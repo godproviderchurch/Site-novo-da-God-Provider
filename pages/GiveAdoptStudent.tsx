@@ -1,5 +1,5 @@
 import React from 'react';
-import { useContent } from '../src/context/ContentContext';
+import { useContent } from '../context/ContentContext';
 
 export const GiveAdoptStudent: React.FC = () => {
     const { content, loading } = useContent();

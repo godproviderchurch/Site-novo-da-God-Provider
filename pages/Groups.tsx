@@ -1,6 +1,6 @@
 import React from 'react';
 import { Users } from 'lucide-react';
-import { useContent } from '../src/context/ContentContext';
+import { useContent } from '../context/ContentContext';
 
 export const Groups: React.FC = () => {
    const { content, loading } = useContent();

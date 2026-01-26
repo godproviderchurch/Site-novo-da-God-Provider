@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useContent } from '../src/context/ContentContext';
+import { useContent } from '../context/ContentContext';
 
 export const About: React.FC = () => {
   const { content, loading } = useContent();

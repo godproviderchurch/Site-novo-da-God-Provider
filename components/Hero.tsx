@@ -1,16 +1,30 @@
 import React from 'react';
+import { useContent } from '../context/ContentContext';
 import { ChevronDown } from 'lucide-react';
 
 export const Hero: React.FC = () => {
+  const { content } = useContent();
   return (
     <div className="relative h-screen w-full overflow-hidden flex items-center justify-center">
-      {/* Background with overlay */}
       <div className="absolute inset-0 z-0">
-        <img
-          src="https://picsum.photos/seed/hero/1920/1080"
-          alt="Worship Background"
-          className="w-full h-full object-cover opacity-80"
-        />
+        {content?.home?.hero?.backgroundVideo ? (
+          <video
+            autoPlay
+            muted
+            loop
+            id="hero-video"
+            playsInline
+            className="w-full h-full object-cover opacity-80"
+          >
+            <source src={content.home.hero.backgroundVideo} type="video/mp4" />
+          </video>
+        ) : (
+          <img
+            src={content?.home?.hero?.backgroundImage || "https://picsum.photos/seed/hero/1920/1080"}
+            alt="Worship Background"
+            className="w-full h-full object-cover opacity-80"
+          />
+        )}
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black"></div>
       </div>
 

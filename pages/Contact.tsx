@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Send, Mail, Phone, MapPin } from 'lucide-react';
-import { useContent } from '../src/context/ContentContext';
+import { useContent } from '../context/ContentContext';
 
 export const Contact: React.FC = () => {
   const { content } = useContent();

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Copy, Check, ArrowRight, Building, GraduationCap } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { useContent } from '../src/context/ContentContext';
+import { useContent } from '../context/ContentContext';
 
 export const Give: React.FC = () => {
   const { content } = useContent();

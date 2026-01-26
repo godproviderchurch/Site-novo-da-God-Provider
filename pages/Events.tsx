@@ -1,6 +1,6 @@
 import React from 'react';
 import { Calendar as CalendarIcon, MapPin, ArrowUpRight } from 'lucide-react';
-import { useContent } from '../src/context/ContentContext';
+import { useContent } from '../context/ContentContext';
 
 export const Events: React.FC = () => {
   const { content, loading } = useContent();

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Instagram, Mail } from 'lucide-react';
-import { useContent } from '../src/context/ContentContext';
+import { useContent } from '../context/ContentContext';
 
 export const Leadership: React.FC = () => {
   const { content, loading } = useContent();

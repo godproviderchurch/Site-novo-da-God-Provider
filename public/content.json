@@ -1,7 +1,7 @@
 {
     "home": {
         "hero": {
-            "title": "BEM-VINDO À GOD PROVIDER",
+            "title": "Teste 123",
             "subtitle": "Um lugar para pertencer",
             "buttonText": "Planeje sua visita",
             "backgroundImage": "https://images.unsplash.com/photo-1544427920-c49ccfb85566?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
@@ -90,7 +90,30 @@
             "title": "Construindo Nossa História",
             "description": "Cause um impacto na próxima geração por meio de sua generosidade.",
             "buttonText": "Faça sua doação"
-        }
+        },
+        "latest_videos": [
+            {
+                "id": "majgfPFXoeU",
+                "title": "Desperta Minh'Alma (Awake My Soul) + Glória, Glória, Aleluia! - God Provider Church, Gabriel Aquino",
+                "date": "há 6 horas",
+                "thumbnail": "https://img.youtube.com/vi/majgfPFXoeU/maxresdefault.jpg",
+                "link": "https://www.youtube.com/watch?v=majgfPFXoeU"
+            },
+            {
+                "id": "XzfvRs_l-V4",
+                "title": "Conferência It´s Time to Bloom // Marcadas Pelo sangue // Pra. Flávia teo",
+                "date": "há 1 dia",
+                "thumbnail": "https://img.youtube.com/vi/XzfvRs_l-V4/maxresdefault.jpg",
+                "link": "https://www.youtube.com/watch?v=XzfvRs_l-V4"
+            },
+            {
+                "id": "0eJWJSZh7Zw",
+                "title": "O poder da gratidão - Pr. Heber Teo",
+                "date": "há 3 dias",
+                "thumbnail": "https://img.youtube.com/vi/0eJWJSZh7Zw/maxresdefault.jpg",
+                "link": "https://www.youtube.com/watch?v=0eJWJSZh7Zw"
+            }
+        ]
     },
     "about": {
         "header": {

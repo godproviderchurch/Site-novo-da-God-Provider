@@ -2,16 +2,12 @@ import React, { useRef, useState } from 'react';
 import { Hero } from '../components/Hero';
 import { ArrowRight, MapPin, Play, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { useContent } from '../src/context/ContentContext';
+import { useContent } from '../context/ContentContext';
 
 // Types
 import { Event } from '../types';
 
-const EVENTS: Event[] = [
-  { id: '1', title: 'Conferência GP', date: '15-17 SET', category: 'Conferência' },
-  { id: '2', title: 'Batismo', date: '24 SET', category: 'Celebração' },
-  { id: '3', title: 'Vigília da Virada', date: '31 DEZ', category: 'Culto Especial' },
-];
+
 
 export const Home: React.FC = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -177,29 +173,7 @@ export const Home: React.FC = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                id: 'majgfPFXoeU',
-                title: "Desperta Minh'Alma (Awake My Soul) + Glória, Glória, Aleluia! - God Provider Church, Gabriel Aquino",
-                date: 'há 6 horas',
-                thumbnail: 'https://img.youtube.com/vi/majgfPFXoeU/maxresdefault.jpg',
-                link: 'https://www.youtube.com/watch?v=majgfPFXoeU'
-              },
-              {
-                id: 'XzfvRs_l-V4',
-                title: 'Conferência It´s Time to Bloom // Marcadas Pelo sangue // Pra. Flávia teo',
-                date: 'há 1 dia',
-                thumbnail: 'https://img.youtube.com/vi/XzfvRs_l-V4/maxresdefault.jpg',
-                link: 'https://www.youtube.com/watch?v=XzfvRs_l-V4'
-              },
-              {
-                id: '0eJWJSZh7Zw',
-                title: 'O poder da gratidão - Pr. Heber Teo',
-                date: 'há 3 dias',
-                thumbnail: 'https://img.youtube.com/vi/0eJWJSZh7Zw/maxresdefault.jpg',
-                link: 'https://www.youtube.com/watch?v=0eJWJSZh7Zw'
-              }
-            ].map((video) => (
+            {(homeData.latest_videos || []).map((video: any) => (
               <a key={video.id} href={video.link} target="_blank" rel="noopener noreferrer" className="group cursor-pointer block">
                 <div className="relative aspect-video bg-black mb-4 overflow-hidden rounded-lg">
                   <img
@@ -226,11 +200,11 @@ export const Home: React.FC = () => {
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-black uppercase mb-12 text-center">Agenda</h2>
           <div className="grid md:grid-cols-3 gap-6">
-            {EVENTS.map((evt) => (
-              <div key={evt.id} className="flex bg-zinc-900 p-6 hover:bg-zinc-800 transition-colors group rounded-lg border border-zinc-800 hover:border-zinc-700">
+            {(content?.events_page?.list || []).slice(0, 3).map((evt: any, idx: number) => (
+              <div key={idx} className="flex bg-zinc-900 p-6 hover:bg-zinc-800 transition-colors group rounded-lg border border-zinc-800 hover:border-zinc-700">
                 <div className="pr-6 border-r border-zinc-700">
-                  <span className="block text-3xl font-black text-white">{evt.date.split(' ')[0]}</span>
-                  <span className="block text-sm font-bold text-zinc-500 uppercase">{evt.date.split(' ')[1]}</span>
+                  <span className="block text-3xl font-black text-white">{evt.day}</span>
+                  <span className="block text-sm font-bold text-zinc-500 uppercase">{evt.month}</span>
                 </div>
                 <div className="pl-6 flex flex-col justify-center">
                   <span className="text-xs text-zinc-500 uppercase tracking-wider mb-1 group-hover:text-white transition-colors">{evt.category}</span>

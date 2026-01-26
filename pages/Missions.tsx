@@ -1,6 +1,6 @@
 import React from 'react';
 import { Globe, Heart, HandHelping, ArrowRight, Plane, Cross } from 'lucide-react';
-import { useContent } from '../src/context/ContentContext';
+import { useContent } from '../context/ContentContext';
 
 export const Missions: React.FC = () => {
   const { content, loading } = useContent();

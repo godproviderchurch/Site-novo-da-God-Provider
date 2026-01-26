@@ -1,56 +1,30 @@
 <?php
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Methods: POST');
+header('Access-Control-Allow-Headers: Content-Type'); // Headers usually handled automatically but good to be explicit
 header('Content-Type: application/json');
-header("Access-Control-Allow-Origin: *");
 
-if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    http_response_code(405);
-    exit;
-}
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_FILES['image'])) {
+        $file = $_FILES['image'];
+        $uploadDir = 'images/';
+        
+        if (!is_dir($uploadDir)) {
+            mkdir($uploadDir, 0755, true);
+        }
 
-require_once 'config.php';
+        $filename = time() . '_' . preg_replace('/[^a-zA-Z0-9_\-\.]/', '', str_replace(' ', '_', $file['name']));
+        $uploadFile = $uploadDir . $filename;
 
-// Check for Authorization header
-$headers = getallheaders();
-$authHeader = $headers['Authorization'] ?? '';
-if (strpos($authHeader, 'Bearer ') === 0) {
-    $authHeader = substr($authHeader, 7);
-}
-
-if ($authHeader !== $ADMIN_PASSWORD) {
-    http_response_code(401);
-    echo json_encode(['success' => false, 'message' => 'Unauthorized']);
-    exit;
-}
-
-if (!isset($_FILES['image'])) {
-    http_response_code(400);
-    echo json_encode(['success' => false, 'message' => 'No image uploaded']);
-    exit;
-}
-
-$uploadDir = 'uploads/';
-if (!is_dir($uploadDir)) {
-    mkdir($uploadDir, 0755, true);
-}
-
-$file = $_FILES['image'];
-$fileName = time() . '_' . basename($file['name']); // Prevent overwrites
-$targetPath = $uploadDir . $fileName;
-
-// Validar tipo de arquivo
-$allowedTypes = ['image/jpeg', 'image/png', 'image/webp', 'image/gif'];
-if (!in_array($file['type'], $allowedTypes)) {
-    echo json_encode(['success' => false, 'message' => 'Invalid file type']);
-    exit;
-}
-
-if (move_uploaded_file($file['tmp_name'], $targetPath)) {
-    echo json_encode([
-        'success' => true, 
-        'url' => '/uploads/' . $fileName
-    ]);
-} else {
-    http_response_code(500);
-    echo json_encode(['success' => false, 'message' => 'Failed to move uploaded file']);
+        if (move_uploaded_file($file['tmp_name'], $uploadFile)) {
+            echo json_encode(['success' => true, 'url' => '/images/' . $filename]);
+        } else {
+            http_response_code(500);
+            echo json_encode(['success' => false, 'message' => 'Erro ao mover arquivo']);
+        }
+    } else {
+        http_response_code(400);
+        echo json_encode(['success' => false, 'message' => 'Nenhum arquivo enviado']);
+    }
 }
 ?>
