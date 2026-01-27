@@ -1,4 +1,8 @@
 {
+    "site_config": {
+        "logo_white": "/images/LOGO-GOD-PROVIDER-BRANCO.png",
+        "logo_alt": "God Provider Church"
+    },
     "home": {
         "hero": {
             "title": "Teste 123",

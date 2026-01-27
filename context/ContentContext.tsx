@@ -7,8 +7,6 @@ interface ContentContextType {
     content: ContentData;
     loading: boolean;
     refreshContent: () => Promise<void>;
-    updateContent: (newContent: ContentData) => void;
-    saveContent: (token?: string) => Promise<{ success: boolean; message: string }>;
 }
 
 const ContentContext = createContext<ContentContextType | undefined>(undefined);
@@ -37,38 +35,8 @@ export const ContentProvider: React.FC<{ children: React.ReactNode }> = ({ child
         fetchContent();
     }, []);
 
-    const updateContent = (newContent: ContentData) => {
-        setContent(newContent);
-    };
-
-    const saveContent = async (token?: string) => {
-        try {
-            if (!content) return { success: false, message: 'No content to save' };
-
-            const headers: HeadersInit = {
-                'Content-Type': 'application/json',
-            };
-
-            if (token) {
-                headers['Authorization'] = `Bearer ${token}`;
-            }
-
-            const response = await fetch('/save_content.php', {
-                method: 'POST',
-                headers,
-                body: JSON.stringify(content),
-            });
-
-            const result = await response.json();
-            return result;
-        } catch (error) {
-            console.error('Error saving content:', error);
-            return { success: false, message: 'Network error or PHP script missing' };
-        }
-    };
-
     return (
-        <ContentContext.Provider value={{ content, loading, refreshContent: fetchContent, updateContent, saveContent }}>
+        <ContentContext.Provider value={{ content, loading, refreshContent: fetchContent }}>
             {children}
         </ContentContext.Provider>
     );

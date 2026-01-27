@@ -17,13 +17,12 @@ import { GiveAdoptStudent } from './pages/GiveAdoptStudent';
 import { Impulse } from './pages/Impulse';
 import { Unicas } from './pages/Unicas';
 import { DomingoService } from './pages/DomingoService';
-import { Admin } from './pages/Admin';
+
 
 const App: React.FC = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/admin" element={<Admin />} />
         <Route path="/*" element={
           <Layout>
             <Routes>

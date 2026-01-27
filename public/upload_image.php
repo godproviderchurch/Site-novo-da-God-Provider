@@ -1,8 +1,29 @@
 <?php
 header('Access-Control-Allow-Origin: *');
-header('Access-Control-Allow-Methods: POST');
-header('Access-Control-Allow-Headers: Content-Type'); // Headers usually handled automatically but good to be explicit
+header('Access-Control-Allow-Methods: POST, OPTIONS');
+header('Access-Control-Allow-Headers: Content-Type, Authorization');
 header('Content-Type: application/json');
+
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    exit(0);
+}
+
+// Authentication Check
+$headers = getallheaders();
+$authHeader = isset($headers['Authorization']) ? $headers['Authorization'] : (isset($_SERVER['HTTP_AUTHORIZATION']) ? $_SERVER['HTTP_AUTHORIZATION'] : '');
+
+if (!$authHeader || strpos($authHeader, 'Bearer ') !== 0) {
+    http_response_code(401);
+    echo json_encode(['success' => false, 'message' => 'Unauthorized']);
+    exit;
+}
+
+$token = substr($authHeader, 7);
+if ($token !== 'admin123') {
+    http_response_code(403);
+    echo json_encode(['success' => false, 'message' => 'Invalid password']);
+    exit;
+}
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_FILES['image'])) {
@@ -20,11 +41,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             echo json_encode(['success' => true, 'url' => '/images/' . $filename]);
         } else {
             http_response_code(500);
-            echo json_encode(['success' => false, 'message' => 'Erro ao mover arquivo']);
+            echo json_encode(['success' => false, 'message' => 'Error moving file']);
         }
     } else {
         http_response_code(400);
-        echo json_encode(['success' => false, 'message' => 'Nenhum arquivo enviado']);
+        echo json_encode(['success' => false, 'message' => 'No file sent']);
     }
 }
 ?>

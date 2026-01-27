@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { useContent } from '../context/ContentContext';
 import { Menu, X, ChevronRight, Instagram, Youtube, Facebook, MapPin } from 'lucide-react';
 
 interface LayoutProps {
@@ -10,6 +11,8 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { pathname } = useLocation();
+  const { content } = useContent();
+  const logoPath = content?.site_config?.logo_white || "/images/LOGO-GOD-PROVIDER-BRANCO.png";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -44,7 +47,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
       >
         <div className="container mx-auto px-6 flex justify-between items-center">
           <Link to="/" className="z-50 relative">
-            <img src="/images/LOGO-GOD-PROVIDER-BRANCO.png" alt="God Provider Church" className="h-12 w-auto hover:opacity-80 transition-opacity" />
+            <img src={logoPath} alt="God Provider Church" className="h-12 w-auto hover:opacity-80 transition-opacity" />
           </Link>
 
           {/* Desktop Nav */}
@@ -108,7 +111,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
             <div className="space-y-4">
               <Link to="/" className="block">
-                <img src="/images/LOGO-GOD-PROVIDER-BRANCO.png" alt="God Provider Church" className="h-16 w-auto mb-4" />
+                <img src={logoPath} alt="God Provider Church" className="h-16 w-auto mb-4" />
               </Link>
               <p className="text-zinc-500 text-sm leading-relaxed">
                 Somos uma igreja apostólica que manifesta o Reino de Deus através do amor e poder, transformando a sociedade.
