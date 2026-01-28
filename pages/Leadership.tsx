@@ -34,8 +34,8 @@ export const Leadership: React.FC = () => {
 
         <div className="flex flex-col lg:flex-row gap-12 items-center">
           {/* Image */}
-          <div className="w-full lg:w-3/5">
-            <div className="relative aspect-[16/10] overflow-hidden bg-zinc-900 group rounded-lg">
+          <div className="w-full lg:w-2/5">
+            <div className="relative aspect-[3/4] overflow-hidden bg-zinc-900 group rounded-lg">
               <img
                 src={senior.image}
                 alt={senior.names}
@@ -45,7 +45,7 @@ export const Leadership: React.FC = () => {
           </div>
 
           {/* Text */}
-          <div className="w-full lg:w-2/5 space-y-8">
+          <div className="w-full lg:w-3/5 space-y-8">
             <div>
               <h3 className="text-4xl md:text-5xl font-black uppercase leading-tight mb-2">
                 {senior.names}
@@ -106,9 +106,28 @@ export const Leadership: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-black uppercase mb-1">{pastor.name}</h3>
                 <p className="text-zinc-500 text-sm font-bold uppercase tracking-widest mb-4">{pastor.role}</p>
-                <button className="text-zinc-400 hover:text-black transition-colors">
-                  <Mail size={20} />
-                </button>
+                <div className="flex gap-2">
+                  {pastor.instagram && (
+                    <a href={pastor.instagram} target="_blank" rel="noreferrer" className="text-zinc-400 hover:text-black transition-colors">
+                      <Instagram size={20} />
+                    </a>
+                  )}
+                  {pastor.instagram_lucas && (
+                    <a href={pastor.instagram_lucas} target="_blank" rel="noreferrer" className="text-zinc-400 hover:text-black transition-colors">
+                      <Instagram size={20} />
+                    </a>
+                  )}
+                  {pastor.instagram_flavia && (
+                    <a href={pastor.instagram_flavia} target="_blank" rel="noreferrer" className="text-zinc-400 hover:text-black transition-colors">
+                      <Instagram size={20} />
+                    </a>
+                  )}
+                  {pastor.instagram_adarque && (
+                    <a href={pastor.instagram_adarque} target="_blank" rel="noreferrer" className="text-zinc-400 hover:text-black transition-colors">
+                      <Instagram size={20} />
+                    </a>
+                  )}
+                </div>
               </div>
             ))}
           </div>

@@ -1,43 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>God Provider Church</title>
-    <link rel="icon" type="image/png" href="/images/LOGO-GOD-PROVIDER-FAV-ICON.png" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-            },
-            colors: {
-              'zion-black': '#050505',
-              'zion-dark': '#121212',
-              'zion-gray': '#262626',
-            }
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>God Provider Church</title>
+  <link rel="icon" type="image/png" href="/images/LOGO-GOD-PROVIDER-FAV-ICON.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700;900&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            anton: ['Anton', 'sans-serif'],
+          },
+          colors: {
+            'zion-black': '#050505',
+            'zion-dark': '#121212',
+            'zion-gray': '#262626',
+            'mission-blue': '#1A0088',
+            'mission-orange': '#FF5E32',
+            'mission-green': '#B6CF4F',
           }
         }
       }
-    </script>
-    <style>
-      body {
-        background-color: #050505;
-        color: white;
+    }
+  </script>
+  <style>
+    body {
+      background-color: #050505;
+      color: white;
+    }
+
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .hide-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    @keyframes infinite-scroll {
+      from {
+        transform: translateX(0);
       }
-      .hide-scrollbar::-webkit-scrollbar {
-        display: none;
+
+      to {
+        transform: translateX(-50%);
       }
-      .hide-scrollbar {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-      }
-    </style>
+    }
+
+    .animate-infinite-scroll {
+      animation: infinite-scroll 30s linear infinite;
+      width: max-content;
+    }
+
+    .animate-infinite-scroll:hover {
+      animation-play-state: paused;
+    }
+  </style>
   <script type="importmap">
 {
   "imports": {
@@ -52,8 +79,10 @@
 </script>
 
 </head>
-  <body>
-    <div id="root"></div>
+
+<body>
+  <div id="root"></div>
   <script type="module" src="/index.tsx"></script>
 </body>
+
 </html>

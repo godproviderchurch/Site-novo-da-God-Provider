@@ -97,7 +97,7 @@ export const About: React.FC = () => {
             <div className="grid md:grid-cols-3 gap-8 mt-12 border-t border-zinc-200 pt-16">
               {aboutData.leadership?.items?.filter((l: any) => l.id !== 'senior').map((leader: any) => (
                 <div key={leader.id} className="text-center group">
-                  <div className="aspect-[3/4] bg-zinc-200 mb-6 overflow-hidden rounded-lg grayscale group-hover:grayscale-0 transition-all duration-500">
+                  <div className="aspect-[3/4] bg-zinc-200 mb-6 overflow-hidden rounded-lg transition-all duration-500">
                     <img src={leader.image} alt={leader.name} className="w-full h-full object-cover" />
                   </div>
                   <h3 className="text-xl font-black uppercase">{leader.name}</h3>

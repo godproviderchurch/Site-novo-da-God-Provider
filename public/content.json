@@ -8,7 +8,8 @@
             "title": "Teste 123",
             "subtitle": "Um lugar para pertencer",
             "buttonText": "Planeje sua visita",
-            "backgroundImage": "https://images.unsplash.com/photo-1544427920-c49ccfb85566?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+            "backgroundVideo": "/videos/video-background-god-provider.mp4",
+            "backgroundImage": "/images/hero-fallback.jpg"
         },
         "identity": {
             "tagline": "Nossa Identidade",
@@ -16,8 +17,8 @@
             "description": "Conheça o nosso DNA (visão, missão e valores) e também aquilo que estamos construindo como igreja.",
             "buttonText": "Saiba mais sobre nós",
             "images": [
-                "https://picsum.photos/seed/about1/400/500",
-                "https://picsum.photos/seed/about2/400/500"
+                "/images/home-identidade-1.jpg",
+                "/images/home-identidade-2.jpg"
             ]
         },
         "ministriesSection": {
@@ -28,43 +29,43 @@
                     "id": "1",
                     "title": "Impulse",
                     "description": "Jovens de 18 a 24 anos",
-                    "image": "https://picsum.photos/seed/minimpulse/800/600"
+                    "image": "/images/min-impulse.jpg"
                 },
                 {
                     "id": "2",
                     "title": "Raise",
                     "description": "Adolescentes de 11 a 17 anos",
-                    "image": "https://picsum.photos/seed/minraise/800/600"
+                    "image": "/images/min-raise.jpg"
                 },
                 {
                     "id": "3",
                     "title": "Únicas",
                     "description": "Ministério de Mulheres",
-                    "image": "https://picsum.photos/seed/minunicas/800/600"
+                    "image": "/images/min-unicas.jpg"
                 },
                 {
                     "id": "4",
                     "title": "Kingdom Kids",
                     "description": "Crianças de 0 a 10 anos",
-                    "image": "https://picsum.photos/seed/minkids/800/600"
+                    "image": "/images/min-kids.jpg"
                 },
                 {
                     "id": "5",
-                    "title": "GP Grupos",
+                    "title": "Grupos",
                     "description": "Comunhão e Relacionamento",
-                    "image": "https://picsum.photos/seed/mingroups/800/600"
+                    "image": "/images/min-grupos.jpg"
                 },
                 {
                     "id": "6",
-                    "title": "GP Worship",
+                    "title": "Worship",
                     "description": "Adoração e Louvor",
-                    "image": "https://picsum.photos/seed/minworship/800/600"
+                    "image": "/images/min-worship.jpg"
                 },
                 {
                     "id": "7",
-                    "title": "GP Escolas",
+                    "title": "Escolas",
                     "description": "Ensino e Treinamento",
-                    "image": "https://picsum.photos/seed/minschool/800/600"
+                    "image": "/images/min-escolas.jpg"
                 }
             ]
         },
@@ -97,25 +98,32 @@
         },
         "latest_videos": [
             {
-                "id": "majgfPFXoeU",
-                "title": "Desperta Minh'Alma (Awake My Soul) + Glória, Glória, Aleluia! - God Provider Church, Gabriel Aquino",
-                "date": "há 6 horas",
-                "thumbnail": "https://img.youtube.com/vi/majgfPFXoeU/maxresdefault.jpg",
-                "link": "https://www.youtube.com/watch?v=majgfPFXoeU"
+                "id": "u0pv2UTodSw",
+                "title": "As Terras do Rei (parte 2) - Pr. Heber Teo",
+                "date": "Recente",
+                "thumbnail": "https://img.youtube.com/vi/u0pv2UTodSw/maxresdefault.jpg",
+                "link": "https://www.youtube.com/watch?v=u0pv2UTodSw"
             },
             {
-                "id": "XzfvRs_l-V4",
-                "title": "Conferência It´s Time to Bloom // Marcadas Pelo sangue // Pra. Flávia teo",
-                "date": "há 1 dia",
-                "thumbnail": "https://img.youtube.com/vi/XzfvRs_l-V4/maxresdefault.jpg",
-                "link": "https://www.youtube.com/watch?v=XzfvRs_l-V4"
+                "id": "1jIwTz_o1D8",
+                "title": "As Terras do Rei (parte 1) - Heber Teo",
+                "date": "Há 1 semana",
+                "thumbnail": "https://img.youtube.com/vi/1jIwTz_o1D8/maxresdefault.jpg",
+                "link": "https://www.youtube.com/watch?v=1jIwTz_o1D8"
             },
             {
-                "id": "0eJWJSZh7Zw",
-                "title": "O poder da gratidão - Pr. Heber Teo",
-                "date": "há 3 dias",
-                "thumbnail": "https://img.youtube.com/vi/0eJWJSZh7Zw/maxresdefault.jpg",
-                "link": "https://www.youtube.com/watch?v=0eJWJSZh7Zw"
+                "id": "ApayEacyZVw",
+                "title": "Influenciados pela Oração - Pr. Lucas Afonso",
+                "date": "Há 2 semanas",
+                "thumbnail": "https://img.youtube.com/vi/ApayEacyZVw/maxresdefault.jpg",
+                "link": "https://www.youtube.com/watch?v=ApayEacyZVw"
+            },
+            {
+                "id": "Tq60h6cUHVY",
+                "title": "Buscando o Reino - Pr. Heber Teo",
+                "date": "Há 3 semanas",
+                "thumbnail": "https://img.youtube.com/vi/Tq60h6cUHVY/maxresdefault.jpg",
+                "link": "https://www.youtube.com/watch?v=Tq60h6cUHVY"
             }
         ]
     },
@@ -123,7 +131,7 @@
         "header": {
             "title": "Sobre Nós",
             "description": "Saiba como a God Provider tem impactado a sociedade.",
-            "heroImage": "https://picsum.photos/seed/abouthero/1920/800"
+            "heroImage": "/images/hero-fallback.jpg"
         },
         "dna": {
             "title": "Conheça o nosso DNA",
@@ -149,7 +157,7 @@
                     "id": "senior",
                     "name": "Heber e Rayssa Teo",
                     "role": "Senior Pastors",
-                    "image": "https://picsum.photos/seed/heber/800/1000",
+                    "image": "/images/lideranca-senior.jpg",
                     "bio": [
                         "Heber e Rayssa são os pastores seniores da God Provider Goiânia. Eles se mudaram para os Estados Unidos em 2012 e permaneceram naquele país por 7 anos, buscando mais de Deus e sendo ativados no sobrenatural.",
                         "Após receberem uma palavra de que Deus traria um avivamento sobre o Brasil, eles deixaram a God Provider Sarasota e retornaram para Goiânia, assumindo a liderança da Sede no Brasil.",
@@ -160,26 +168,26 @@
                     "id": "founder",
                     "name": "Adarque e Eunice Teo",
                     "role": "Pastores Fundadores",
-                    "image": "https://picsum.photos/seed/adarque/400/500"
+                    "image": "/images/lideranca-fundadores.jpg"
                 },
                 {
                     "id": "campus",
                     "name": "Lucas e Flávia Teo",
                     "role": "Pastores",
-                    "image": "https://picsum.photos/seed/lucasflavia/400/500"
+                    "image": "/images/lideranca-campus.jpg"
                 },
                 {
                     "id": "lead",
                     "name": "Lucas Afonso",
                     "role": "Pastor",
-                    "image": "https://picsum.photos/seed/lucasafonso/400/500"
+                    "image": "/images/lideranca-lead.jpg"
                 }
             ]
         }
     },
     "ministries": {
         "header": {
-            "title": "Áreas de Atuação",
+            "title": "Nossos Ministérios",
             "description": "Acreditamos que todo membro é um ministro. Descubra onde você pode servir, crescer e pertencer na família God Provider."
         },
         "list": [
@@ -187,44 +195,50 @@
                 "title": "Impulse",
                 "subtitle": "Jovens de 18 a 24 anos",
                 "description": "Somos o ministério da God Provider Church que busca impulsionar jovens a buscarem a presença de Deus e viverem o seu chamado. Nos reunimos todo sábado, às 20h15, em nossa sede, localizada em Goiânia, Goiás.",
-                "image": "https://picsum.photos/seed/minimpulse/800/600"
+                "image": "/images/min-impulse.jpg"
             },
             {
                 "title": "Raise",
                 "subtitle": "Adolescentes de 11 a 17 anos",
                 "description": "Somos o ministério da God Provider Church que busca conectar adolescentes ao propósito de Deus.",
-                "image": "https://picsum.photos/seed/minraise/800/600"
+                "image": "/images/min-raise.jpg"
             },
             {
-                "title": "GP Worship",
+                "title": "Worship",
                 "subtitle": "Ministério de Louvor",
                 "description": "Somos o ministério da God Provider Church que busca exaltar o nome do Senhor e conduzir pessoas na adoração, à medida que elas são tocadas, curadas e libertas.",
-                "image": "https://picsum.photos/seed/minworship/800/600"
+                "image": "/images/min-worship.jpg"
             },
             {
                 "title": "Únicas",
                 "subtitle": "Ministério de Mulheres",
                 "description": "Somos o ministério da God Provider Church que busca o despertar de mulheres em suas identidades de filhas. O Culto Únicas acontece na última segunda do mês, às 19h00.",
-                "image": "https://picsum.photos/seed/minunicas/800/600"
+                "image": "/images/min-unicas.jpg"
             },
             {
                 "title": "Kingdom Kids",
                 "subtitle": "Crianças de 0 a 10 anos",
                 "description": "Somos o ministério da God Provider Church que busca ensinar e ministrar ao coração das crianças. Nos reunimos aos domingo, às 10h00 e às 19h00, no subsolo da nossa sede.",
-                "image": "https://picsum.photos/seed/minkids/800/600"
+                "image": "/images/min-kids.jpg"
             },
             {
-                "title": "GP Grupos",
+                "title": "Grupos",
                 "subtitle": "Comunhão e Relacionamento",
                 "description": "Somos o ministério da God Provider Church que busca construir relacionamentos saudáveis através dos nossos encontros. Nos reunimos às terças-feiras, às 20h00.",
-                "image": "https://picsum.photos/seed/mingroups/800/600"
+                "image": "/images/min-grupos.jpg"
+            },
+            {
+                "title": "Escolas",
+                "subtitle": "Ensino e Treinamento",
+                "description": "Somos o ministério da God Provider Church dedicado ao ensino e capacitação através de cursos e treinamentos.",
+                "image": "/images/min-escolas.jpg"
             }
         ]
     },
     "groups": {
         "header": {
-            "title": "GP Grupos",
-            "description": "Junte-se a nós no GP Grupo."
+            "title": "Grupos",
+            "description": "Junte-se a nós em um Grupo."
         },
         "card": {
             "title": "Toda Terça | 20h",
@@ -258,26 +272,30 @@
         "senior": {
             "names": "Heber e Rayssa Teo",
             "roles": "Senior Pastors",
-            "image": "https://picsum.photos/seed/heber/1200/800",
+            "image": "/images/lideranca-senior.jpg",
             "bio": "Pastores à frente da God Provider Church, Heber e Rayssa têm liderado com amor e visão, dedicando suas vidas para edificar uma igreja relevante e apaixonada por Jesus. Eles acreditam no poder transformador do Evangelho e trabalham incansavelmente para ver vidas restauradas e propósitos ativados.",
-            "instagram_heber": "https://instagram.com/",
-            "instagram_rayssa": "https://instagram.com/"
+            "instagram_heber": "https://www.instagram.com/heberteo/",
+            "instagram_rayssa": "https://www.instagram.com/rayssateo/"
         },
         "team": [
             {
                 "name": "Adarque e Eunice Teo",
                 "role": "Founder Pastors",
-                "image": "https://picsum.photos/seed/adarque/600/600"
+                "image": "/images/lideranca-fundadores.jpg",
+                "instagram_adarque": "https://www.instagram.com/pastoraeuniceteo/"
             },
             {
                 "name": "Lucas e Flávia Teo",
                 "role": "Campus Pastors",
-                "image": "https://picsum.photos/seed/lucasflavia/600/600"
+                "image": "/images/lideranca-campus.jpg",
+                "instagram_lucas": "https://www.instagram.com/lucasteo/",
+                "instagram_flavia": "https://www.instagram.com/flavia.teo/"
             },
             {
                 "name": "Lucas Afonso",
                 "role": "Lead Pastor",
-                "image": "https://picsum.photos/seed/lucasafonso/600/600"
+                "image": "/images/lideranca-lead.jpg",
+                "instagram": "https://www.instagram.com/olucasafonso/"
             }
         ],
         "quote": {
@@ -323,44 +341,13 @@
         },
         "list": [
             {
-                "month": "SET",
-                "day": "15",
-                "title": "Conferência GP 2024",
-                "location": "Vibra São Paulo",
+                "month": "FEV",
+                "day": "01-06",
+                "title": "CONFERÊNCIA CÉUS ABERTOS 2026",
+                "location": "Sede God Provider Church",
                 "category": "Conferência",
-                "time": "19:00"
-            },
-            {
-                "month": "SET",
-                "day": "24",
-                "title": "Culto de Batismo",
-                "location": "Campus Morumbi",
-                "category": "Celebração",
-                "time": "10:00"
-            },
-            {
-                "month": "OUT",
-                "day": "02",
-                "title": "Noite de Adoração - GP Music",
-                "location": "Campus Osasco",
-                "category": "Worship",
-                "time": "20:00"
-            },
-            {
-                "month": "OUT",
-                "day": "12",
-                "title": "GP Kids Day",
-                "location": "Todos os Campi",
-                "category": "Kids",
-                "time": "09:00"
-            },
-            {
-                "month": "NOV",
-                "day": "04",
-                "title": "Escola de Profetas",
-                "location": "Campus Morumbi",
-                "category": "Ensino",
-                "time": "19:30"
+                "time": "19:30",
+                "link": "https://eventos.sistemaprover.com.br/pt/godproviderchurch/ceus-abertos-2026"
             }
         ]
     },

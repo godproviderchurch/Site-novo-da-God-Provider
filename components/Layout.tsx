@@ -34,7 +34,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
     { name: 'Unidades', path: '/locations' },
     { name: 'Ministérios', path: '/ministries' },
     { name: 'Missões', path: '/missions' },
-    { name: 'GP Grupos', path: '/groups' },
+    { name: 'Grupos', path: '/groups' },
     { name: 'Agenda', path: '/events' },
   ];
 
@@ -82,19 +82,19 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
       </header>
 
       {/* Mobile Nav Overlay */}
-      <div className={`fixed inset-0 bg-black z-40 flex flex-col justify-center items-center gap-8 transition-transform duration-500 ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+      <div className={`fixed inset-0 bg-black z-40 flex flex-col justify-start items-center gap-6 transition-transform duration-500 pt-24 pb-10 overflow-y-auto ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
         {navLinks.map((link) => (
           <Link
             key={link.name}
             to={link.path}
-            className="text-2xl font-bold uppercase tracking-widest text-zinc-300 hover:text-white"
+            className="text-xl font-bold uppercase tracking-widest text-zinc-300 hover:text-white"
           >
             {link.name}
           </Link>
         ))}
         <Link
           to="/give"
-          className="mt-8 bg-white text-black px-8 py-3 text-sm font-bold uppercase tracking-widest"
+          className="mt-6 bg-white text-black px-8 py-3 text-sm font-bold uppercase tracking-widest"
         >
           Contribua
         </Link>
@@ -106,7 +106,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
       </main>
 
       {/* Footer */}
-      <footer className="bg-zinc-950 border-t border-zinc-900 pt-20 pb-10">
+      <footer className="bg-black relative z-20 border-t border-zinc-900 pt-20 pb-10">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
             <div className="space-y-4">
@@ -125,8 +125,9 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
                 <li><Link to="/leadership" className="hover:text-white transition-colors">Liderança</Link></li>
                 <li><Link to="/locations" className="hover:text-white transition-colors">Nossas Unidades</Link></li>
                 <li><Link to="/ministries" className="hover:text-white transition-colors">Ministérios</Link></li>
+                <li><Link to="/school" className="hover:text-white transition-colors">Escola Sobrenatural</Link></li>
                 <li><Link to="/missions" className="hover:text-white transition-colors">Missões</Link></li>
-                <li><Link to="/groups" className="hover:text-white transition-colors">GP Grupos</Link></li>
+                <li><Link to="/groups" className="hover:text-white transition-colors">Grupos</Link></li>
                 <li><Link to="/contact" className="hover:text-white transition-colors">Fale Conosco</Link></li>
               </ul>
             </div>
@@ -136,24 +137,22 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
               <div className="space-y-3 text-zinc-500 text-sm flex flex-col">
                 <span className="flex items-start gap-2">
                   <MapPin size={16} className="mt-1 shrink-0" />
-                  R. Liberato Carvalho Leite, 86<br />Jd. Monte Kemel, São Paulo - SP
+                  Av. T-14, 835 – St. Bela Vista<br />Goiânia - GO
                 </span>
                 <span className="block mt-4 text-white font-medium">Cultos</span>
-                <span>Domingos: 10h, 17h, 19h</span>
+                <span>Domingo: 10h e 19h</span>
+                <span>Sábado (Impulse): 19h30</span>
               </div>
             </div>
 
             <div>
               <h5 className="font-bold text-white mb-6 uppercase tracking-wider text-xs">Conecte-se</h5>
               <div className="flex gap-4 mb-6">
-                <a href="#" className="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center text-white hover:bg-white hover:text-black transition-all">
+                <a href="https://www.instagram.com/godproviderchurch/" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center text-white hover:bg-white hover:text-black transition-all">
                   <Instagram size={18} />
                 </a>
-                <a href="#" className="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center text-white hover:bg-white hover:text-black transition-all">
+                <a href="https://www.youtube.com/@GodProviderChurch" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center text-white hover:bg-white hover:text-black transition-all">
                   <Youtube size={18} />
-                </a>
-                <a href="#" className="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center text-white hover:bg-white hover:text-black transition-all">
-                  <Facebook size={18} />
                 </a>
               </div>
               <p className="text-zinc-600 text-xs">

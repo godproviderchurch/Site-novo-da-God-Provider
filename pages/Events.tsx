@@ -30,7 +30,13 @@ export const Events: React.FC = () => {
 
         <div className="border-t-2 border-black">
           {list.map((evt: any, idx: number) => (
-            <div key={idx} className="group border-b border-zinc-200 py-8 flex flex-col md:flex-row md:items-center gap-6 hover:bg-zinc-50 transition-colors cursor-pointer">
+            <a
+              key={idx}
+              href={evt.link || '#'}
+              target="_blank"
+              rel="noreferrer"
+              className="group border-b border-zinc-200 py-8 flex flex-col md:flex-row md:items-center gap-6 hover:bg-zinc-50 transition-colors cursor-pointer"
+            >
 
               <div className="flex items-start gap-4 md:w-32 shrink-0">
                 <div className="flex flex-col items-center">
@@ -59,7 +65,7 @@ export const Events: React.FC = () => {
                 </button>
               </div>
 
-            </div>
+            </a>
           ))}
         </div>
       </div>

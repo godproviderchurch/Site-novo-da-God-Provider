@@ -32,7 +32,7 @@ export const Ministries: React.FC = () => {
                   <img
                     src={min.image}
                     alt={min.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    className={`w-full h-full object-cover ${min.title.includes('Kingdom Kids') ? 'object-top' : 'object-center'} group-hover:scale-105 transition-transform duration-700`}
                   />
                   <div className="absolute inset-0 border-2 border-transparent group-hover:border-white/20 transition-colors pointer-events-none"></div>
                 </div>
@@ -44,13 +44,15 @@ export const Ministries: React.FC = () => {
                 <div className="h-1 w-20 bg-white mb-4"></div>
                 <p className="text-zinc-400 text-lg leading-relaxed max-w-lg">
                   {min.description}
+                  {min.title === 'Escolas' && (
+                    <div className="mt-6">
+                      <a href="#/school" className="inline-block px-6 py-3 border border-white text-white font-bold uppercase tracking-widest text-xs hover:bg-white hover:text-black transition-colors">
+                        Conheça a Escola
+                      </a>
+                    </div>
+                  )}
                 </p>
-                <a
-                  href="#"
-                  className="inline-block mt-4 text-white border-b border-white pb-1 font-bold uppercase text-sm hover:text-zinc-300 hover:border-zinc-300 transition-colors"
-                >
-                  Saiba Mais
-                </a>
+
               </div>
 
             </div>

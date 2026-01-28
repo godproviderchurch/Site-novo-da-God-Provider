@@ -10,6 +10,8 @@ import { Give } from './pages/Give';
 import { Contact } from './pages/Contact';
 import { Leadership } from './pages/Leadership';
 import { Groups } from './pages/Groups';
+import { School } from './pages/School';
+import { PrayerTower } from './pages/PrayerTower';
 import { Missions } from './pages/Missions';
 
 import { GiveCNH } from './pages/GiveCNH';
@@ -17,7 +19,6 @@ import { GiveAdoptStudent } from './pages/GiveAdoptStudent';
 import { Impulse } from './pages/Impulse';
 import { Unicas } from './pages/Unicas';
 import { DomingoService } from './pages/DomingoService';
-
 
 const App: React.FC = () => {
   return (
@@ -31,6 +32,8 @@ const App: React.FC = () => {
               <Route path="/leadership" element={<Leadership />} />
               <Route path="/locations" element={<Locations />} />
               <Route path="/ministries" element={<Ministries />} />
+              <Route path="/school" element={<School />} />
+              <Route path="/torre" element={<PrayerTower />} />
               <Route path="/missions" element={<Missions />} />
               <Route path="/groups" element={<Groups />} />
               <Route path="/events" element={<Events />} />
