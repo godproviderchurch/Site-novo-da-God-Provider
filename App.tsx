@@ -28,22 +28,22 @@ const App: React.FC = () => {
           <Layout>
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/leadership" element={<Leadership />} />
-              <Route path="/locations" element={<Locations />} />
-              <Route path="/ministries" element={<Ministries />} />
-              <Route path="/school" element={<School />} />
+              <Route path="/sobre" element={<About />} />
+              <Route path="/lideranca" element={<Leadership />} />
+              <Route path="/unidades" element={<Locations />} />
+              <Route path="/ministerios" element={<Ministries />} />
+              <Route path="/escola" element={<School />} />
               <Route path="/torre" element={<PrayerTower />} />
-              <Route path="/missions" element={<Missions />} />
-              <Route path="/groups" element={<Groups />} />
-              <Route path="/events" element={<Events />} />
-              <Route path="/give" element={<Give />} />
-              <Route path="/give/cnh" element={<GiveCNH />} />
-              <Route path="/give/adopt-student" element={<GiveAdoptStudent />} />
-              <Route path="/contact" element={<Contact />} />
+              <Route path="/missoes" element={<Missions />} />
+              <Route path="/grupos" element={<Groups />} />
+              <Route path="/agenda" element={<Events />} />
+              <Route path="/contribua" element={<Give />} />
+              <Route path="/contribua/cnh" element={<GiveCNH />} />
+              <Route path="/contribua/adote-um-aluno" element={<GiveAdoptStudent />} />
+              <Route path="/contato" element={<Contact />} />
               <Route path="/impulse" element={<Impulse />} />
               <Route path="/unicas" element={<Unicas />} />
-              <Route path="/sunday-service" element={<DomingoService />} />
+              <Route path="/culto-domingo" element={<DomingoService />} />
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </Layout>

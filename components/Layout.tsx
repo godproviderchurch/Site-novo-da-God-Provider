@@ -29,13 +29,13 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
 
   const navLinks = [
     { name: 'Home', path: '/' },
-    { name: 'Sobre', path: '/about' },
-    { name: 'Liderança', path: '/leadership' },
-    { name: 'Unidades', path: '/locations' },
-    { name: 'Ministérios', path: '/ministries' },
-    { name: 'Missões', path: '/missions' },
-    { name: 'Grupos', path: '/groups' },
-    { name: 'Agenda', path: '/events' },
+    { name: 'Sobre', path: '/sobre' },
+    { name: 'Liderança', path: '/lideranca' },
+    { name: 'Unidades', path: '/unidades' },
+    { name: 'Ministérios', path: '/ministerios' },
+    { name: 'Missões', path: '/missoes' },
+    { name: 'Grupos', path: '/grupos' },
+    { name: 'Agenda', path: '/agenda' },
   ];
 
   return (
@@ -62,7 +62,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
               </Link>
             ))}
             <Link
-              to="/give"
+              to="/contribua"
               className="bg-white text-black px-6 py-2 text-xs font-bold uppercase tracking-widest hover:bg-zinc-200 transition-all"
             >
               Contribua
@@ -93,7 +93,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
           </Link>
         ))}
         <Link
-          to="/give"
+          to="/contribua"
           className="mt-6 bg-white text-black px-8 py-3 text-sm font-bold uppercase tracking-widest"
         >
           Contribua
@@ -113,28 +113,29 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
               <Link to="/" className="block">
                 <img src={logoPath} alt="God Provider Church" className="h-16 w-auto mb-4" />
               </Link>
-              <p className="text-zinc-500 text-sm leading-relaxed">
+              <p className="text-zinc-400 text-sm leading-relaxed">
                 Somos uma igreja apostólica que manifesta o Reino de Deus através do amor e poder, transformando a sociedade.
               </p>
             </div>
 
             <div>
               <h5 className="font-bold text-white mb-6 uppercase tracking-wider text-xs">Navegação</h5>
-              <ul className="space-y-3 text-zinc-500 text-sm">
-                <li><Link to="/about" className="hover:text-white transition-colors">Quem Somos</Link></li>
-                <li><Link to="/leadership" className="hover:text-white transition-colors">Liderança</Link></li>
-                <li><Link to="/locations" className="hover:text-white transition-colors">Nossas Unidades</Link></li>
-                <li><Link to="/ministries" className="hover:text-white transition-colors">Ministérios</Link></li>
-                <li><Link to="/school" className="hover:text-white transition-colors">Escola Sobrenatural</Link></li>
-                <li><Link to="/missions" className="hover:text-white transition-colors">Missões</Link></li>
-                <li><Link to="/groups" className="hover:text-white transition-colors">Grupos</Link></li>
-                <li><Link to="/contact" className="hover:text-white transition-colors">Fale Conosco</Link></li>
+              <ul className="space-y-3 text-zinc-400 text-sm">
+                <li><Link to="/sobre" className="hover:text-white transition-colors">Quem Somos</Link></li>
+                <li><Link to="/lideranca" className="hover:text-white transition-colors">Liderança</Link></li>
+                <li><Link to="/unidades" className="hover:text-white transition-colors">Nossas Unidades</Link></li>
+                <li><Link to="/ministerios" className="hover:text-white transition-colors">Ministérios</Link></li>
+                <li><Link to="/escola" className="hover:text-white transition-colors">Escola Sobrenatural</Link></li>
+                <li><Link to="/contribua/adote-um-aluno" className="hover:text-white transition-colors">Adote um Aluno</Link></li>
+                <li><Link to="/missoes" className="hover:text-white transition-colors">Missões</Link></li>
+                <li><Link to="/grupos" className="hover:text-white transition-colors">Grupos</Link></li>
+                <li><Link to="/contato" className="hover:text-white transition-colors">Fale Conosco</Link></li>
               </ul>
             </div>
 
             <div>
               <h5 className="font-bold text-white mb-6 uppercase tracking-wider text-xs">Unidade Sede</h5>
-              <div className="space-y-3 text-zinc-500 text-sm flex flex-col">
+              <div className="space-y-3 text-zinc-400 text-sm flex flex-col">
                 <span className="flex items-start gap-2">
                   <MapPin size={16} className="mt-1 shrink-0" />
                   Av. T-14, 835 – St. Bela Vista<br />Goiânia - GO
@@ -155,13 +156,13 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
                   <Youtube size={18} />
                 </a>
               </div>
-              <p className="text-zinc-600 text-xs">
+              <p className="text-zinc-400 text-xs">
                 Assine nossa newsletter para receber novidades.
               </p>
             </div>
           </div>
 
-          <div className="border-t border-zinc-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-zinc-600">
+          <div className="border-t border-zinc-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-zinc-400">
             <p>&copy; {new Date().getFullYear()} God Provider Church. Todos os direitos reservados.</p>
             <div className="flex gap-6">
               <a href="#" className="hover:text-white">Privacidade</a>

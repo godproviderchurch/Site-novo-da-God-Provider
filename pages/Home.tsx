@@ -38,7 +38,7 @@ export const Home: React.FC = () => {
             <p className="text-zinc-400 leading-relaxed mb-8">
               {homeData.identity?.description || 'Conheça o nosso DNA...'}
             </p>
-            <Link to="/about" className="inline-flex items-center gap-2 text-white font-bold uppercase tracking-wider hover:gap-4 transition-all">
+            <Link to="/sobre" className="inline-flex items-center gap-2 text-white font-bold uppercase tracking-wider hover:gap-4 transition-all">
               {homeData.identity?.buttonText || 'Saiba mais'} <ArrowRight size={16} />
             </Link>
           </div>
@@ -85,7 +85,7 @@ export const Home: React.FC = () => {
           </div>
 
           <div className="text-center mt-8 md:hidden">
-            <Link to="/ministries" className="text-zinc-500 hover:text-white text-sm uppercase font-bold transition-colors">Ver todos</Link>
+            <Link to="/ministerios" className="text-zinc-500 hover:text-white text-sm uppercase font-bold transition-colors">Ver todos</Link>
           </div>
         </div>
       </section>
@@ -175,7 +175,7 @@ export const Home: React.FC = () => {
             ))}
           </div>
           <div className="text-center mt-12">
-            <Link to="/events" className="inline-block border border-zinc-700 text-white px-8 py-3 text-sm font-bold uppercase tracking-widest hover:bg-white hover:text-black hover:border-white transition-all">
+            <Link to="/agenda" className="inline-block border border-zinc-700 text-white px-8 py-3 text-sm font-bold uppercase tracking-widest hover:bg-white hover:text-black hover:border-white transition-all">
               Ver Agenda Completa
             </Link>
           </div>
@@ -189,7 +189,7 @@ export const Home: React.FC = () => {
           <p className="max-w-2xl mx-auto text-zinc-600 text-lg mb-10">
             {homeData.cta?.description}
           </p>
-          <Link to="/give" className="bg-black text-white px-10 py-4 text-sm font-bold uppercase tracking-widest hover:bg-zinc-800 transition-all">
+          <Link to="/contribua" className="bg-black text-white px-10 py-4 text-sm font-bold uppercase tracking-widest hover:bg-zinc-800 transition-all">
             {homeData.cta?.buttonText}
           </Link>
         </div>

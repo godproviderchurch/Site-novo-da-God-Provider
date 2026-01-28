@@ -44,7 +44,7 @@ export const Give: React.FC = () => {
       <div className="container mx-auto px-6 mb-24">
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {/* CNH */}
-          <Link to="/give/cnh" className="group relative overflow-hidden rounded-xl h-80 flex items-end p-8 border border-zinc-800 hover:border-white transition-colors">
+          <Link to="/contribua/cnh" className="group relative overflow-hidden rounded-xl h-80 flex items-end p-8 border border-zinc-800 hover:border-white transition-colors">
             <div className="absolute inset-0 bg-zinc-900">
               <img src="https://picsum.photos/800/600?random=90" alt="Building" className="w-full h-full object-cover opacity-40 group-hover:opacity-60 transition-opacity duration-500" />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
@@ -64,7 +64,7 @@ export const Give: React.FC = () => {
           </Link>
 
           {/* Adopt a Student */}
-          <Link to="/give/adopt-student" className="group relative overflow-hidden rounded-xl h-80 flex items-end p-8 border border-zinc-800 hover:border-white transition-colors">
+          <Link to="/contribua/adote-um-aluno" className="group relative overflow-hidden rounded-xl h-80 flex items-end p-8 border border-zinc-800 hover:border-white transition-colors">
             <div className="absolute inset-0 bg-zinc-900">
               <img src="https://picsum.photos/800/600?random=91" alt="Student" className="w-full h-full object-cover opacity-40 group-hover:opacity-60 transition-opacity duration-500" />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>

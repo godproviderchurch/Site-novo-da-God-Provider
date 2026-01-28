@@ -24,13 +24,7 @@ export const Locations: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {campuses.map((campus: any) => (
             <div key={campus.id} className="bg-white border border-zinc-200 group hover:border-black transition-colors duration-300 flex flex-col shadow-sm hover:shadow-xl">
-              <div className="h-64 overflow-hidden relative">
-                <img
-                  src={campus.image}
-                  alt={campus.name}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                />
-              </div>
+              {/* Image removed as requested */}
 
               <div className="p-8 flex-1 flex flex-col">
                 <h3 className="text-2xl font-black uppercase mb-4 leading-tight">{campus.name}</h3>

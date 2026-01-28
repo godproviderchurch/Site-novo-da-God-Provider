@@ -117,17 +117,17 @@ export const About: React.FC = () => {
           </h2>
 
           <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-12">
-            <Link to="/visit" className="group p-8 border-2 border-black hover:bg-black hover:text-white transition-colors">
+            <Link to="/contato" className="group p-8 border-2 border-black hover:bg-black hover:text-white transition-colors">
               <h3 className="text-xl font-black uppercase mb-2">Sou novo aqui</h3>
               <p className="text-zinc-600 group-hover:text-zinc-400 text-sm">Planeje sua primeira visita</p>
             </Link>
 
-            <Link to="/locations" className="group p-8 border-2 border-black hover:bg-black hover:text-white transition-colors">
+            <Link to="/unidades" className="group p-8 border-2 border-black hover:bg-black hover:text-white transition-colors">
               <h3 className="text-xl font-black uppercase mb-2">Localização</h3>
               <p className="text-zinc-600 group-hover:text-zinc-400 text-sm">Encontre uma unidade</p>
             </Link>
 
-            <Link to="/give" className="group p-8 border-2 border-black hover:bg-black hover:text-white transition-colors">
+            <Link to="/contribua" className="group p-8 border-2 border-black hover:bg-black hover:text-white transition-colors">
               <h3 className="text-xl font-black uppercase mb-2">Quero contribuir</h3>
               <p className="text-zinc-600 group-hover:text-zinc-400 text-sm">Faça parte da história</p>
             </Link>

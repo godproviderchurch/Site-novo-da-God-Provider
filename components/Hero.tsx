@@ -44,7 +44,7 @@ export const Hero: React.FC = () => {
         </p>
 
         <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
-          <Link to="/contact" className="px-8 py-4 bg-white text-black font-black uppercase tracking-widest hover:bg-zinc-200 transition-colors w-full md:w-auto min-w-[200px]">
+          <Link to="/unidades" className="px-8 py-4 bg-white text-black font-black uppercase tracking-widest hover:bg-zinc-200 transition-colors w-full md:w-auto min-w-[200px]">
             {content?.home?.hero?.buttonText || 'Planeje sua visita'}
           </Link>
           <Link to="/torre" className="px-8 py-4 border border-white text-white font-black uppercase tracking-widest hover:bg-white hover:text-black transition-colors w-full md:w-auto min-w-[200px]">
